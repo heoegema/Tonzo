@@ -12,12 +12,12 @@ from googleplaces import GooglePlaces, types, lang
 # Azure portal URL.
 base_url = 'https://westus.api.cognitive.microsoft.com/'
 # Your account key goes here. (used for cognitive services)
-account_key = '37cf49dc60bb435db8706acf05894bba'
-google_places_key = 'AIzaSyD9BfYe2qDYFAOyXrfzskgb9dXis_PV6kQ'
+account_key = ''
+google_places_key = ''
 
 headers = {'Content-Type':'application/json', 'Ocp-Apim-Subscription-Key':account_key}
 
-luis_url = luis_url = luis.Luis('https://api.projectoxford.ai/luis/v1/application?id=de15ad98-4809-4971-a30c-bb8470b6c78a&subscription-key=b0e5746863c04db4bb91e9a5583d2482')
+luis_url = luis_url = luis.Luis('')
 google_places = GooglePlaces(google_places_key)
 
 app = Flask(__name__)
